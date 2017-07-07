@@ -143,8 +143,12 @@ public WebElement writeAMessage1;
 public WebElement endChat;
 
 @ButtonType()
-@FindBy(css = "button.liveAgentChatElement.liveAgentEndButton2")
+@FindBy(css = "button.liveAgentChatElement.liveAgentEndButton3")
 public WebElement endChat1;
+
+@ButtonType()
+@FindBy(css = "button.liveAgentChatElement.liveAgentEndButton3")
+public WebElement endChat2;
 
 
 }
