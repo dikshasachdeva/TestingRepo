@@ -1,0 +1,31 @@
+<project default="runtests" xmlns:provar="antlib:com.provar.testrunner.ant">
+	<property environment="env"/>
+	<property name="provar.home" value="C:/Program Files/Provar11013/"/>
+	<property name="testproject.home" value=".."/>
+	<property name="testproject.results" value="../ANT/Results"/>
+
+    <target name="runtests">
+    
+        <provar:compile provarHome="${provar.home}" projectPath="${testproject.home}"/>
+    	
+        <provar:run provarHome="${provar.home}" 
+				projectPath="${testproject.home}" 
+				resultsPath="${testproject.results}" 
+				resultsPathDisposition="Increment" 
+				testEnvironment="" 
+				webBrowser="Chrome" 
+				webBrowserConfiguration="Full Screen" 
+				excludeCallableTestCases="true" 
+				salesforceMetadataCache="Reuse" 
+				projectCachePath="../../.provarCaches" 
+				testOutputlevel="WARNING" 
+				pluginOutputlevel="WARNING"
+				invokeTestRunMonitor="true"
+				>
+			<fileset dir="../tests/TestScripts"><include name="KnowledgeManagement.testcase"/></fileset>
+			<emailProperties sendEmail="true" primaryRecipients="harpreet.bedi@provartesting.com" ccRecipients="" bccRecipients="" emailSubject="Provar test run report" attachExecutionReport="true" attachZip="true"/>
+			<attachmentProperties includeOnlyFailures="false" includeTestCaseDescription="true" includeScreenshots="true" includeWarningMessages="false" includeInfoMessages="true" includeDebugMessages="false" includeTestStepTime="false"/>
+        </provar:run>
+
+    </target>
+</project>

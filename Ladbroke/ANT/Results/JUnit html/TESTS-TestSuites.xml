@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite failures="0" hostname="HARPREET" id="0" name="Ladbroke/tests" package="" skipped="0" tests="1" time="379.129" timestamp="Tue May 30 11:45:30 IST 2017">
+	    <properties>
+		      <property name="excludeCallableTestCases" value="true" />
+
+		      <property name="testEnvironment" value="" />
+
+		      <property name="pluginOutputLevel" value="WARNING" />
+
+		      <property name="projectPath" value=".." />
+
+		      <property name="salesforceMetadataCache" value="Reuse" />
+
+		      <property name="resultsPathDisposition" value="Increment" />
+
+		      <property name="testOutputLevel" value="WARNING" />
+
+		      <property name="webBrowserType" value="Google Chrome" />
+
+		      <property name="resultsPath" value="../ANT/Results" />
+
+		      <property name="webBrowserConfiguration" value="Full Screen" />
+
+		      <property name="projectCachePath" value="../../.provarCaches" />
+
+	    </properties>
+
+	    <testcase classname="tests/TestScripts\Player_LiveAgentChat.testcase" name="Player_LiveAgentChat.testcase" time="376.372">
+	</testcase>
+
+  </testsuite>
+</testsuites>

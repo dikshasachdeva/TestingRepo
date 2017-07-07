@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testProject selectedBrowserConfigurationName="Full Screen">
+  <title>/Ladbroke/.testproject</title>
+  <configPath>config</configPath>
+  <testsPath>tests</testsPath>
+  <templatesPath>templates</templatesPath>
+  <sourcePath>src</sourcePath>
+  <secureStoragePath>.secrets</secureStoragePath>
+  <browserDebugPort>0</browserDebugPort>
+  <connectionClasses>
+    <connectionClass name="sf">
+      <connections>
+        <connection name="Ladbroke">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="261ed0e2-9e43-46ec-8244-fb0db93e236e" url="sf:user=geraint.waters@ladbrokescoral.com.sit;password={password};environment=SANDBOX"/>
+          </connectionUrls>
+        </connection>
+        <connection name="Provar_Supervisor">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="f2da421a-ef78-45fd-9257-9532628c41d3" url="sf:user=provarsupervisor@ladbrokescoral.com.sit;password={password};environment=SANDBOX;metadataConnection=Ladbroke"/>
+          </connectionUrls>
+        </connection>
+        <connection name="Provar_CenterAgent">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="f454386e-a67f-407c-ae65-f6a8813758f9" url="sf:user=provarcontactcenteragent@ladbrokescoral.com.sit;password={password};environment=SANDBOX;metadataConnection=Ladbroke"/>
+          </connectionUrls>
+        </connection>
+        <connection name="Player1">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl url="sf:userType=COMMUNITIES;user=itestedthis1@coral.com;environment=PROD_DEV;logonAsConnection=Ladbroke;portal=Coral Help Centre"/>
+          </connectionUrls>
+        </connection>
+        <connection name="Supervisor">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl url="sf:user=contactcentresupervisor@ladbrokescoral.com.sit;environment=PROD_DEV;logonAsConnection=Ladbroke"/>
+          </connectionUrls>
+        </connection>
+        <connection name="Agent">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl url="sf:user=contactcentreagent2@ladbrokescoral.com.sit;environment=PROD_DEV;logonAsConnection=Ladbroke"/>
+          </connectionUrls>
+        </connection>
+        <connection name="KA">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl url="sf:user=knowledgem1@ladbrokecoral.sit;environment=PROD_DEV;logonAsConnection=Ladbroke"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+    <connectionClass name="ui">
+      <connections>
+        <connection name="GuestUser">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl url="se:baseUrl=https://sit-ladbrokescoral.cs88.force.com/coral/s/"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+  </connectionClasses>
+  <browserConfigurations>
+    <browserConfiguration adjustBrowserWidthForChromeIde="true" browserHeight="0" browserWidth="0" name="Full Screen">
+      <summary>Full screen with Test Builder adjustment</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="768" browserHeightType="Pixels" browserWidth="1024" browserWidthType="Pixels" name="1024x768">
+      <summary>Fixed 1024x768</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="800" browserHeightType="Pixels" browserWidth="1280" browserWidthType="Pixels" name="1280x800">
+      <summary>Fixed 1280x800</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="768" browserHeightType="Pixels" browserWidth="1366" browserWidthType="Pixels" name="1366x768">
+      <summary>Fixed 1366x768</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="1080" browserHeightType="Pixels" browserWidth="1920" browserWidthType="Pixels" name="1920x1080">
+      <summary>Fixed 1920x1080</summary>
+    </browserConfiguration>
+  </browserConfigurations>
+</testProject>
